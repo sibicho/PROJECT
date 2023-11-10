@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Conversions</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <section id="home">
@@ -28,13 +29,13 @@
               <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
               <figcaption>Celcius to Farenheit Conversion</figcaption>
             </figure>
-            <article> 
+            <article>
               <fieldset>
                 <legend>Temperature</legend>
                 <label for="Temperature">Celsius</label> <br/>
- <input type="number" id="c"> <br/>
-                <button id="temperature"> Convert </button> <br/>
-                <input type="number" id="f"> <br/>
+ <input type="number" id="celsius"> <br/>
+                <button id="temperature" onclick="temperature()"> Convert </button> <br/>
+                <input type="number" id="fahrenheit"> <br/>
  <label for="Temperature">Fahrenheit</label>
               </fieldset>
               <aside>
@@ -55,10 +56,10 @@
               <fieldset>
                 <legend>Weight</legend>
                 <label for="Weight">KG</label> <br/>
- <input type="number"> <br/>
-                <button id="weight"> Convert </button>  <br/>
+ <input type="number" id="kilo"> <br/>
+                <button id="weight" onclick="weight()"> Convert </button>  <br/>
  
-                <input type="number">  <br/>
+                <input type="number" id="pounds">  <br/>
   <label for="Weight">Pounds</label>    
               </fieldset>
               <aside>
@@ -78,9 +79,9 @@
               <fieldset>
                 <legend>Distance</legend>
                   <label for="Distance">KM</label> <br/>
- <input type="number">  <br/>
-                  <button id="distance"> Convert </button> <br/>
-                  <input type="number">  <br/>
+ <input type="number" id="km">  <br/>
+                  <button id="distance" onclick="distance()"> Convert </button> <br/>
+                  <input type="number" id="miles">  <br/>
   <label for="Distance">Miles</label>
               </fieldset>
               <aside>
